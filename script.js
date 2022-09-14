@@ -1,7 +1,7 @@
 const display = document.getElementById("display");
 const question = document.getElementById("question");
 const startBtn = document.getElementById("start");
-console
+
 const countdownOverlay = document.getElementById("countdown");
 const resultModal = document.getElementById("result");
 const modalBackground = document.getElementById("modal-background");
@@ -14,6 +14,7 @@ let questionText = "";
 
 // Load and display question
 fetch("./texts.json")
+
   .then((res) => res.json())
   .then((data) => {
     questionText = data[Math.floor(Math.random() * data.length)];
@@ -115,7 +116,7 @@ const start = () => {
     if (count == 0) {
       // -------------- START TYPING -----------------
       document.addEventListener("keydown", typeController);
-      countdownOverlay.style.display = "flex";
+      countdownOverlay.style.display = "none";
       display.classList.remove("inactive");
 
       clearInterval(startCountdown);
