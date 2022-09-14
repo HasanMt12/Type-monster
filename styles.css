@@ -155,7 +155,8 @@ button {
 
 .card {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: start;
   align-items: center;
   padding: 20px 30px;
   color: white;
@@ -185,7 +186,8 @@ button {
     padding: 0 20px;
     width: 100%;
   }
-  #histories{
+
+  #histories {
     display: flex;
     flex-wrap: wrap;
   }
