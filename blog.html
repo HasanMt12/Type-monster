@@ -17,52 +17,123 @@ body {
   background-image: url("./bg.png");
   background-size: cover;
   background-position: left top;
-  font-family: "Zilla Slab", serif;
 }
+.bg-common{
+    background-color: #1b1b1b;
+}
+.text-common{
+    color: #e2e2e2;
+}
+table, th, td {
+  border: 1px solid;
+}
+
     </style>
 </head>
 <body>
+    <section class="container my-5">
+        <div class="text-center">
+            <h1 class="text-light">Frequently Asked Questions in Basic javascript Concept</h1>
+        </div>
+    </section>
 
-    <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                    aria-expanded="true" aria-controls="collapseOne">
-                    Accordion Item #1
-                </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> 
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Accordion Item #2
-                </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>This is the second item's accordion body.</strong>
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Accordion Item #3
-                </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> 
+    <div class="container">
+        <div class="row d-flex justify-content-center pb-5">
+            <div class="col-12 col-lg-10 ">
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+    
+                    <div class="accordion-item border-1 border-info bg-common text-common mb-4 ">
+                        <h2 class="accordion-header " id="panelsStayOpen-headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                <span class="text-dark fs-4 ">What is Difference Between Local Storage and session Storage?</span>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                            aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body">
+                                <table  style="width:100% ; margin: auto;">
+                                    <tr class="text-center">
+                                        <th>Local Storage</th>
+                                        <th>Season Storage</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="ps-3">The storage capacity of local storage is 5MB/10MB</td>
+                                        <td class="ps-3">The storage capacity of session storage is 5MB</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ps-3">As it is not session-based, it must be deleted via javascript or manually</td>
+                                        <td class="ps-3">It’s session-based and works per window or tab. This means that data is stored only for the duration of a session, i.e., until the browser (or tab) is closed</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ps-3">The client can only read local storage</td>
+                                        <td class="ps-3">The client can only read local storage</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ps-3">There is no transfer of data to the server</td>
+                                        <td class="ps-3">There is no transfer of data to the server</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ps-3">There are fewer old browsers that support it</td>
+                                        <td class="ps-3">There are fewer old browsers that support it</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-1 border-info mb-4 ">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseTwo">
+                                What is Difference Between Global scop and Block Scope?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingTwo">
+                            <div class="accordion-body">
+                                <table>
+                                    <tr>
+                                        <th></th>
+                                    </tr>
+                                    
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-1 border-info mb-4 ">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseThree">
+                                How to work Event Loop?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingThree">
+                            <div class="accordion-body">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-1 border-info mb-4 ">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseFour">
+                                How can you get Undefined?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingFour">
+                            <div class="accordion-body">
+                                <p>
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
