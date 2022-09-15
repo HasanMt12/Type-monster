@@ -181,20 +181,7 @@ button {
   top: 0;
 }
 
-/*html to blog site link style  */
-a {
-  text-decoration: none;
-}
 
-#blog-html-link {
-  position: absolute;
-  color: aliceblue;
-  right: 100px;
-  top: 30px;
-  font-size: 20px;
-  font-weight: 600;
-  cursor: pointer;
-}
 
 @media only screen and (max-width: 700px) {
   .box-container {
@@ -215,4 +202,27 @@ a {
     height: 100%;
     padding: 24px;
   }
+}
+
+
+a {
+  text-decoration: none;
+}
+
+#blog-html-link {
+  position: absolute;
+  color: aliceblue;
+  border: 1px solid #9dffad;
+
+  right: 30px;
+  top: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
