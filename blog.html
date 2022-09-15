@@ -26,6 +26,10 @@ body {
 }
 table, th, td {
   border: 1px solid;
+  padding: 5px;
+}
+.text-code-common{
+    color: #55ac63;
 }
 
     </style>
@@ -33,7 +37,7 @@ table, th, td {
 <body>
     <section class="container my-5">
         <div class="text-center">
-            <h1 class="text-light">Frequently Asked Questions in Basic javascript Concept</h1>
+            <h1 class="text-code-common">Frequently Asked Questions in javascript Concept <br> and developments Tools.</h1>
         </div>
     </section>
 
@@ -44,17 +48,17 @@ table, th, td {
     
                     <div class="accordion-item border-1 border-info bg-common text-common mb-4 ">
                         <h2 class="accordion-header " id="panelsStayOpen-headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            <button class="accordion-button fw-bold bg-secondary" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
                                 aria-controls="panelsStayOpen-collapseOne">
-                                <span class="text-dark fs-5 fw-bold ">What is Difference Between Local Storage and session Storage?</span>
+                                <span class="text-dark fs-5 fw-bold ps-5 py-2">What is Difference Between Local Storage and session Storage?</span>
                             </button>
                         </h2>
                         <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
                             aria-labelledby="panelsStayOpen-headingOne">
                             <div class="accordion-body">
                                 <table  style="width:100% ; margin: auto;">
-                                    <tr class="text-center">
+                                    <tr class="text-center text-code-common">
                                         <th>Local Storage</th>
                                         <th>Season Storage</th>
                                     </tr>
@@ -79,23 +83,38 @@ table, th, td {
                                         <td class="ps-3">There are fewer old browsers that support it</td>
                                     </tr>
                                 </table>
+                                <br>
+                                <ul> <strong class="text-decoration-underline fs-6 text-code-common">Local storage has 4 methods:</strong>
+                                    <li>setItem() Method – This method takes two parameters one is key and another one is value. It is used to store the value in a particular location with the name of the key. <span class="text-code-common">localStorage.setItem(key, value)</span></li>
+                                    <li>getItem() Method – This method takes one parameter that is key which is used to get the value stored with a particular key name. <span class="text-code-common">localStorage.getItem(key)</span></li>
+                                    <li>removeItem() Method – This is method is used to remove the value stored in the memory in reference to key. <span class="text-code-common" >localStorage.removeItem(key)</span></li>
+                                    <li>clear() Method – This method is used to clear all the values stored in localStorage. <span class="text-code-common">localStorage.clear()</span></li>
+                                </ul>
+                                <ul> <strong class="text-decoration-underline fs-6 text-code-common">Session Storage has 4 methods:</strong>
+                                    <li>setItem() Method – This method takes two parameters one is key and another one is value. It is used to store the value in a particular location with the name of the key. <span class="text-code-common">sessionStorage.setItem(key, value)</span></li>
+                                    <li>getItem() Method – This method takes one parameter that is key which is used to get the value stored with a particular key name. <span class="text-code-common" >sessionStorage.getItem(key)</span></li>
+                                    <li>removeItem() Method – This is method is used to remove the value stored in the memory in reference to key.
+                                        <span class="text-code-common">sessionStorage.removeItem(key)</span></li>
+                                    <li>clear() Method – This method is used to clear all the values stored in the session storage
+                                        <span class="text-code-common">sessionStorage.clear()</span></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item border-1 border-info bg-common text-common mb-4 ">
                         <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            <button class="accordion-button bg-secondary collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
                                 aria-controls="panelsStayOpen-collapseTwo">
-                                <span class="text-dark fs-5 fw-bold ">What is Difference Between Global scop and Block Scope?</span>
+                                <span class="text-dark fs-5 fw-bold ps-5 py-2">What is Difference Between Global scop and Block Scope?</span>
                             </button>
                         </h2>
                         <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
                             aria-labelledby="panelsStayOpen-headingTwo">
                             <div class="accordion-body">
                                 <table>
-                                    <tr class="text-center">
-                                        <th>Global scope</th>
+                                    <tr class="text-center text-code-common">
+                                        <th >Global scope</th>
                                         <th>Block scope</th>
                                     </tr>
                                     <tr>
@@ -103,34 +122,59 @@ table, th, td {
                                         anywhere in a JavaScript program.</td>
                                         <td class="ps-3">A block scoped variable means that the variable defined within a block will not be accessible from outside the block</td>
                                     </tr>
-
-                                </table>
+                                </table> <br>
+                                <ul>
+                                    <li>Global variables last as long as the application is running.</li>
+                                    <li>Local variables last as long as a function is running.</li>
+                                    <li>Block statements don't create a new scope and the block scope does not apply to var keyword.</li>
+                                    <li>Const and Let can define scope to block statements.</li>
+                                </ul>
+                                <p class="text-code-common"> <span class="text-decoration-underline text-code-common">Example: </span> <br>
+                                    let variableName = "A string"; <span class="text-secondary">//global scope</span> <br>
+                                    if (condition) { <br>
+                                    block of code to be executed <span class="text-secondary">//local scope </span> <br>
+                                    } <br>
+                                    let anotherVariable = "something else"; <span class="text-secondary"> //global scope</span>  </p>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item border-1 border-info bg-common text-common mb-4 ">
                         <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            <button class="accordion-button bg-secondary collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
                                 aria-controls="panelsStayOpen-collapseThree">
-                                <span class="text-dark fs-5 fw-bold ">How to work Event Loop?</span>
+                                <span class="text-dark fs-5 fw-bold ps-5 py-2">How to work Event Loop?</span>
                             </button>
                         </h2>
                         <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
                             aria-labelledby="panelsStayOpen-headingThree">
                             <div class="accordion-body ">
+                                <p> <strong>JavaScript has a runtime model based on an event loop,</strong>  which is responsible for executing the code, collecting and processing events, and executing queued sub-tasks. This model is quite different from models in other languages like C and Java.</p>
                                 <p >The Event Loop has one simple job — <strong> to monitor the Call Stack and the Callback Queue.</strong> If the Call Stack is empty, the
                                 Event Loop will take the first event from the queue and will push it to the Call Stack, which effectively runs it. Such
                                 an iteration is called a tick in the Event Loop.</p>
+                                <span class="text-code-common">Example </span> <br>
+                               <p> To prevent a blocking function from blocking other activities, you typically put it in a callback function for execution later. For example:</p>
+
+                                <h6 class="text-code-common" >console.log('Start script...');  <br>
+                                <br>
+                                setTimeout(() => {<br>
+                                                   <br>
+                                task('Download a file.'); <br>
+                                        <br>
+                                }, <span class="text-danger">1000</span> );                        <br>
+                                <br>
+                                console.log('Done!');</h6>            <br>
+                                # In this example, you’ll see the message <code>'Start script...'</code> and <code>'Done!'</code>  immediately. And after that, you’ll see the message <code>'Download a file'.</code> 
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item border-1 border-info bg-common text-common mb-4 ">
                         <h2 class="accordion-header" id="panelsStayOpen-headingFour">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            <button class="accordion-button bg-secondary collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
                                 aria-controls="panelsStayOpen-collapseFour">
-                                <span class="text-dark fs-5 fw-bold ">How can you get Undefined?</span>
+                                <span class="text-dark fs-5 fw-bold ps-5 py-2">How can you get Undefined?</span>
                             </button>
                         </h2>
                         <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
@@ -139,7 +183,7 @@ table, th, td {
                                 <p>
                                     A variable that has not been assigned a value is of type undefined.A method or statement also returns undefined if the variable that is being evaluated does not have an assigned value.
                                 </p>
-                                <ul>  *** There are many way to get undefined as output. Those are.. ***
+                                <ul><span class="text-code-common">*** There are many way to get undefined as output. Those are.. ***</span>
                                     <li>Variable which is not assigned</li>
                                     <li>Parameter that will be not pass in Function this return undefined</li>
                                     <li>Function with no return</li>
