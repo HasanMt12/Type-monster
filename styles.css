@@ -180,13 +180,13 @@ button {
   position: fixed;
   top: 0;
 }
- 
+
 /*html to blog site link style  */
 a {
   text-decoration: none;
 }
 
-#blog {
+#blog-html-link {
   position: absolute;
   color: aliceblue;
   right: 100px;
