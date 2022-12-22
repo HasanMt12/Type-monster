@@ -1,4 +1,4 @@
-# Type-monster
+# Type-monster (Speed Typer)
 
 
 
